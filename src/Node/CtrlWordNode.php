@@ -2,7 +2,8 @@
 namespace RtfParser\Node;
 
 define('CTRL_WORD_TABLE', [
-  "\\par" => 'RtfParser\Node\ParNode'
+  "\\par" => 'RtfParser\Node\ParNode',
+  "\\line" => 'RtfParser\Node\ParNode'
 ]);
 
 // Control word node
