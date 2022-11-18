@@ -51,6 +51,6 @@
     // curl -d '{"conteudo": "teste"}' -X POST 'htpp://127.0.0.1/rtf-to-txt/convert.php'
     if ($method === 'POST'){
         $jsonBody = json_decode($body, true);
-        echo extractText($jsonBody['conteudo'],array("input_encoding" => "ASCII","output_enconding" => "UTF-16"));
+        echo extractText($jsonBody['conteudo'],array("input_encoding" => "ASCII","output_enconding" => "utf-8"));
     }
 ?>
